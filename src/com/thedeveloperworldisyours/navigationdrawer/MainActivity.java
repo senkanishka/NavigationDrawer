@@ -83,7 +83,7 @@ public class MainActivity extends ActionBarActivity {
 			}
 		});
 		mDrawerList.setItemChecked(0, true);
-		mTitleSection = getTitle();
+		mTitleSection = getString(R.string.first_fragment);
 		mTitleApp = getTitle();
 
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
@@ -96,7 +96,7 @@ public class MainActivity extends ActionBarActivity {
 			}
 
 			public void onDrawerOpened(View drawerView) {
-				getSupportActionBar().setTitle(mTitleSection);
+				getSupportActionBar().setTitle(R.string.app_name);
 				ActivityCompat.invalidateOptionsMenu(MainActivity.this);
 			}
 		};
